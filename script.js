@@ -48,11 +48,231 @@ purchaseHistory.appendChild(div);
 
 //card 1
 function card1() {
-    const card1Name = getElementValueById("card-1-name");
-    const card1Price = getPriceValueById("card-1-price");
-    const purchaseHistory = document.getElementById("purchase-history");
-    const totalPrice = getPriceValueById("total-price");
-    const discount = getPriceValueById("dicount");
-    const total = getPriceValueById("total");
-    console.log(card1Price);
+  const card1Price = getPriceValueById("card-1-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card1Price;
+    if (newTotalPrice > 200) {
+        const discountPrice = totalPrice * 20 / 100;
+    } else {
+        discountPrice = "00";
+    }
+    const netPrice = newTotalPrice - discountPrice;
+    setValue("total-price", newTotalPrice); 
+    setValue("discount", discountPrice);
+    setValue("total", netPrice);
+  //purchase history
+ const purchaseHistory = document.getElementById("purchase-history");
+const div = document.createElement("div");
+div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. K. Accessories </p>
+                </div> `;
+    purchaseHistory.appendChild(div);
+}
+//card 2
+function cardTwo() {
+  const card2Price = getPriceValueById("card-2-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card2Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. K. Accessories 2</p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card three
+function cardThree() {
+  const card3Price = getPriceValueById("card-3-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card3Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. Home Cooker </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card four
+function cardFour() {
+  const card4Price = getPriceValueById("card-4-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card4Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. 
+Sports Cap  </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card five
+function cardFive() {
+  const card5Price = getPriceValueById("card-5-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card5Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. Full Jersey Set  </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card six
+function cardSix() {
+  const card6Price = getPriceValueById("card-6-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card6Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. 
+Sports keds   </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card seven
+function cardSeven() {
+  const card7Price = getPriceValueById("card-7-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card7Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. 
+Single Relax Chair   </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card eight
+function cardEight() {
+  const card8Price = getPriceValueById("card-8-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card8Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. Children play </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
+}
+//card seven
+function cardNine() {
+  const card9Price = getPriceValueById("card-9-price");
+  const totalPrice = getPriceValueById("total-price");
+  const newTotalPrice = totalPrice + card9Price;
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
+  //purchase history
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
+                <div class="py-3 flex flex-row  items-center justify-between">
+                    <p class="text-[20px] font-bold text-dark2">${
+                      purchaseHistory.childElementCount + 1
+                    }. 
+
+Flexible Sofa    </p>
+                </div> `;
+  purchaseHistory.appendChild(div);
 }

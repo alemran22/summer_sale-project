@@ -54,7 +54,7 @@
               <!-- card 1 -->
               <div
                 onclick="card1()"
-                id="card-1"
+                id=""
                 class="cursor-pointer bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12"
               >
                 <!-- image -->
@@ -87,8 +87,9 @@
               </div>
               <!-- card 2 -->
               <div
-                id="card-2"
-                class="bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12"
+              onclick="cardTwo()"
+                id=""
+                class="bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12 cursor-pointer"
               >
                 <!-- image -->
                 <div
@@ -120,8 +121,8 @@
               </div>
               <!-- card 3 -->
               <div
-                id="card-3"
-                class="bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12"
+                onclick="cardThree()"
+                class="bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12 cursor-pointer"
               >
                 <!-- image -->
                 <div
@@ -146,8 +147,8 @@
                   <h3 id="card-3-name" class="font-semibold text-[20px]">
                     Home Cooker
                   </h3>
-                  <p id="card-3-price" class="text-black/50 text-[20px]">
-                    49.00 TK
+                  <p  class="text-black/50 text-[20px]">
+                   <span id="card-3-price">49.00</span>TK
                   </p>
                 </div>
               </div>
@@ -163,7 +164,7 @@
               class="flex flex-col md:flex-row lg:flex-row md:gap-2 gap-6 lg:gap-3"
             >
               <!-- card 1 -->
-              <div id="card-4" class="bg-white p-3 rounded-lg lg:w-4/12">
+              <div onclick="cardFour()" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex items-center"
@@ -193,7 +194,7 @@
                 </div>
               </div>
               <!-- card 2 -->
-              <div id="card-5" class="bg-white p-3 rounded-lg lg:w-4/12">
+              <div onclick="cardFive()" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
@@ -223,7 +224,7 @@
                 </div>
               </div>
               <!-- card 3 -->
-              <div id="card-6" class="bg-white p-3 rounded-lg lg:w-4/12">
+              <div onclick="cardSix()" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
@@ -264,7 +265,7 @@
               class="flex flex-col md:flex-row lg:flex-row md:gap-2 gap-6 lg:gap-3"
             >
               <!-- card 1 -->
-              <div id="card-7" class="bg-white p-3 rounded-lg lg:w-4/12">
+              <div onclick="cardSeven()" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 md:px-14 bg-black/5 rounded-lg flex items-center"
@@ -294,7 +295,7 @@
                 </div>
               </div>
               <!-- card 2 -->
-              <div id="card-8" class="bg-white p-3 rounded-lg lg:w-4/12">
+              <div onclick="cardEight()" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
@@ -324,7 +325,7 @@
                 </div>
               </div>
               <!-- card 3 -->
-              <div id="card-9" class="bg-white p-3 rounded-lg lg:w-4/12">
+              <div onclick="cardNine()" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
@@ -356,9 +357,9 @@
         <div
           class="lg:w-3/12 mt-10 lg:py-10 px-1 flex lg:flex-col md:flex-row md:gap-5"
         >
-          <div class="p-2 md:px-6 lg:px-2 bg-white">
+          <div class="p-2 md:px-6 lg:px-3 bg-white">
             <h2 class="text-2xl lg:text-3xl font-medium mb-2 md:mb-6">Have coupon?</h2>
-            <div class="flex flex-row items-center">
+            <div class="flex flex-row items-center cursor-pointer">
               <input
                 type="text"
                 name=""
@@ -377,15 +378,16 @@
           </div>
           <hr />
           <div class="mt-3">
-            <div id="purchase-history" class="p-2">
+            <div class=""  id="purchase-history"></div>
+            <div class="p-2">
               <h4 class="text-base font-bold text-dark2">
-                Total Price: <span id="total-price"></span>
+                Total Price: <span id="total-price">00</span> TK
               </h4>
               <h4 class="text-base font-bold text-dark2">
-                Discount: <span id="discount"></span>
+                Discount: <span id="discount">00</span> TK
               </h4>
               <h4 class="text-base font-bold text-dark2">
-                Total: <span id="total"></span>
+               Total Payable: <span id="total">00</span> TK
               </h4>
             </div>
             <div class="p-2">

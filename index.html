@@ -6,44 +6,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="max-w-7xl mx-auto font-sans bg-[#F8F8F8]">
-      <header
-        class="bg-[#F9F6E2] w-full flex flex-row gap-1 items-center py-10 px-20"
-      >
-        <!-- left -->
-        <div class="w-1/2 flex flex-col gap-4 justify-center items-center">
-          <p class="">---SALE FEVER---</p>
-          <h2 class="font-bold text-[52px]">
-            Purchase TK 200 or <br />
-            above & get <span class="text-[#E527B2]">20% off</span>
-          </h2>
-          <div class="flex flex-row gap-2 items-center">
-            <p class="text-2xl font-medium">Use Promo Code</p>
-            <button
-              class="py-2 px-4 bg-[#E527B2] text-white text-2xl font-semibold rounded-lg"
+    <div class="font-sans bg-[#F8F8F8]">
+      <header class="bg-[#F9F6E2] w-full">
+        <div
+          class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-1 items-center p-4 md:py-6 lg:py-10 lg:px-20"
+        >
+          <!-- left -->
+          <div class="lg:w-1/2 flex flex-col gap-4 justify-center items-center">
+            <p class="text-xl">---SALE FEVER---</p>
+            <h2
+              class="font-bold text-2xl lg:text-[52px] md:text-[52px] leading-snug"
             >
-              SELL200
-            </button>
+              Purchase TK 200 or <br />
+              above & get <span class="text-[#E527B2]">20% off</span>
+            </h2>
+            <div class="flex flex-row gap-2 items-center my-5 lg:my-0">
+              <p class="text-xl lg:text-2xl md:text-2xl font-medium">
+                Use Promo Code
+              </p>
+              <button
+                class="py-2 px-4 bg-[#E527B2] text-white text-2xl font-semibold rounded-lg"
+              >
+                SELL200
+              </button>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="lg:w-1/2 flex flex-row justify-center items-center">
+            <img src="./images/Summer 1.png" alt="" class="md:scale-75" />
           </div>
         </div>
-        <!-- right -->
-        <div class="w-1/2"><img src="./images/Summer 1.png" alt="" /></div>
       </header>
-      <main class="px-28 py-10 flex flex-row gap-4 w-full">
+      <main
+        class="max-w-7xl mx-auto p-4 lg:px-20 lg:py-10 flex flex-col lg:flex-row gap-4 w-full"
+      >
         <!-- left -->
-        <div class="w-9/12">
+        <div class="lg:w-9/12 md:w-full">
           <!-- Kitchenware -->
-          <section class="w-full">
-            <h2 class="text-[40px] font-semibold my-4">Kitchenware</h2>
+          <section class="w-full mt-6">
+            <h2 class="text-3xl md:text-4xl lg:text-[40px] font-semibold my-4">
+              Kitchenware
+            </h2>
             <!-- card container 1-->
-            <div class="flex flex-row gap-3">
+            <div
+              class="flex flex-col md:flex-row lg:flex-row gap-6 md:gap-2 lg:gap-3"
+            >
               <!-- card 1 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div
+                onclick="card1()"
+                id="card-1"
+                class="cursor-pointer bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12"
+              >
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex items-center"
                 >
-                  <img src="./images/prod1.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod1.png"
+                    alt=""
+                    class="lg:scale-125 md:scale-125"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -55,17 +77,28 @@
                     <img src="./images/Frame (1).png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">K. Accessories</h3>
-                  <p class="text-black/50 text-[20px]">39.00 TK</p>
+                  <h3 id="card-1-name" class="font-semibold text-[20px]">
+                    K. Accessories
+                  </h3>
+                  <p class="text-black/50 text-[20px]">
+                    <span id="card-1-price">39.00</span>TK
+                  </p>
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div
+                id="card-2"
+                class="bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12"
+              >
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
                 >
-                  <img src="./images/prod2.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod2.png"
+                    alt=""
+                    class="md:scale-125 lg:scale-125"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -77,17 +110,28 @@
                     <img src="./images/Frame (1).png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">K. Accessories</h3>
-                  <p class="text-black/50 text-[20px]">25.00 TK</p>
+                  <h3 id="card-2-name" class="font-semibold text-[20px]">
+                    K. Accessories 2
+                  </h3>
+                  <p id="card-2-price" class="text-black/50 text-[20px]">
+                    25.00 TK
+                  </p>
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div
+                id="card-3"
+                class="bg-white p-3 rounded-lg md:w-4/12 lg:w-4/12"
+              >
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
                 >
-                  <img src="./images/prod3.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod3.png"
+                    alt=""
+                    class="md:scale-125 lg:scale-125"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -99,24 +143,36 @@
                     <img src="./images/Frame (1).png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Home Cooker</h3>
-                  <p class="text-black/50 text-[20px]">49.00 TK</p>
+                  <h3 id="card-3-name" class="font-semibold text-[20px]">
+                    Home Cooker
+                  </h3>
+                  <p id="card-3-price" class="text-black/50 text-[20px]">
+                    49.00 TK
+                  </p>
                 </div>
               </div>
             </div>
           </section>
           <!-- Sportswear -->
-          <section class="w-full">
-            <h2 class="text-[40px] font-semibold my-4">Sportswear</h2>
+          <section class="w-full mt-6">
+            <h2 class="text-3xl lg:text-[40px] font-semibold my-4">
+              Sportswear
+            </h2>
             <!-- card container 1-->
-            <div class="flex flex-row gap-3">
+            <div
+              class="flex flex-col md:flex-row lg:flex-row md:gap-2 gap-6 lg:gap-3"
+            >
               <!-- card 1 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div id="card-4" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex items-center"
                 >
-                  <img src="./images/prod4.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod4.png"
+                    alt=""
+                    class="lg:scale-125 md:scale-150"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -128,17 +184,25 @@
                     <img src="./images/Frame (1).png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Sports Cap</h3>
-                  <p class="text-black/50 text-[20px]">49.00 TK</p>
+                  <h3 id="card-4-name" class="font-semibold text-[20px]">
+                    Sports Cap
+                  </h3>
+                  <p id="card-4-price" class="text-black/50 text-[20px]">
+                    49.00 TK
+                  </p>
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div id="card-5" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
                 >
-                  <img src="./images/prod5.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod5.png"
+                    alt=""
+                    class="lg:scale-125 md:scale-150"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -150,17 +214,25 @@
                     <img src="./images/Frame.png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Full Jersey Set</h3>
-                  <p class="text-black/50 text-[20px]">69.00 TK</p>
+                  <h3 id="card-5-name" class="font-semibold text-[20px]">
+                    Full Jersey Set
+                  </h3>
+                  <p id="card-5-price" class="text-black/50 text-[20px]">
+                    69.00 TK
+                  </p>
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div id="card-6" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
                 >
-                  <img src="./images/prod6.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod6.png"
+                    alt=""
+                    class="lg:scale-125 md:scale-150"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -172,24 +244,36 @@
                     <img src="./images/Frame (1).png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Sports keds</h3>
-                  <p class="text-black/50 text-[20px]">149.00 TK</p>
+                  <h3 id="card-6-name" class="font-semibold text-[20px]">
+                    Sports keds
+                  </h3>
+                  <p id="card-6-price" class="text-black/50 text-[20px]">
+                    149.00 TK
+                  </p>
                 </div>
               </div>
             </div>
           </section>
           <!-- Furniture -->
-          <section class="w-full">
-            <h2 class="text-[40px] font-semibold my-4">Furniture</h2>
+          <section class="w-full mt-6">
+            <h2 class="text-3xl lg:text-[40px] font-semibold my-4">
+              Furniture
+            </h2>
             <!-- card container 1-->
-            <div class="flex flex-row gap-3">
+            <div
+              class="flex flex-col md:flex-row lg:flex-row md:gap-2 gap-6 lg:gap-3"
+            >
               <!-- card 1 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div id="card-7" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
-                  class="h-36 py-8 px-20 bg-black/5 rounded-lg flex items-center"
+                  class="h-36 py-8 px-20 md:px-14 bg-black/5 rounded-lg flex items-center"
                 >
-                  <img src="./images/prod7.png" alt="" class="scale-150" />
+                  <img
+                    src="./images/prod7.png"
+                    alt=""
+                    class="lg:scale-110 md:w-52"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -201,17 +285,25 @@
                     <img src="./images/Frame.png" alt="" />
                     <img src="./images/Frame (1).png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Single Relax Chair</h3>
-                  <p class="text-black/50 text-[20px]">185.00 TK</p>
+                  <h3 id="card-7-name" class="font-semibold text-[20px]">
+                    Single Relax Chair
+                  </h3>
+                  <p id="card-7-price" class="text-black/50 text-[20px]">
+                    185.00 TK
+                  </p>
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div id="card-8" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
                 >
-                  <img src="./images/prod8.png" alt="" class="scale-125" />
+                  <img
+                    src="./images/prod8.png"
+                    alt=""
+                    class="lg:scale-125 md:scale-150 md:w-36"
+                  />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -223,17 +315,21 @@
                     <img src="./images/Frame.png" alt="" />
                     <img src="./images/Frame.png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Children play</h3>
-                  <p class="text-black/50 text-[20px]">299.00 TK</p>
+                  <h3 id="card-8-name" class="font-semibold text-[20px]">
+                    Children play
+                  </h3>
+                  <p id="card-8-price" class="text-black/50 text-[20px]">
+                    299.00 TK
+                  </p>
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="bg-white p-3 rounded-lg w-4/12">
+              <div id="card-9" class="bg-white p-3 rounded-lg lg:w-4/12">
                 <!-- image -->
                 <div
                   class="h-36 py-8 px-20 bg-black/5 rounded-lg flex flex-row items-center"
                 >
-                  <img src="./images/prod9.png" alt="" class="scale-125" />
+                  <img src="./images/prod9.png" alt="" class="lg:scale-125" />
                 </div>
                 <!-- texts -->
                 <div class="flex flex-col items-center gap-1">
@@ -245,42 +341,61 @@
                     <img src="./images/Frame.png" alt="" />
                     <img src="./images/Frame.png" alt="" />
                   </div>
-                  <h3 class="font-semibold text-[20px]">Flexible Sofa</h3>
-                  <p class="text-black/50 text-[20px]">339.00 TK</p>
+                  <h3 id="card-9-name" class="font-semibold text-[20px]">
+                    Flexible Sofa
+                  </h3>
+                  <p id="card-9-price" class="text-black/50 text-[20px]">
+                    339.00 TK
+                  </p>
                 </div>
               </div>
             </div>
           </section>
         </div>
         <!-- right -->
-        <div class="w-3/12 mt-16 py-10 px-1">
-          <div class="p-2 bg-white">
-            <h2 class="text-2xl font-medium mb-2">Have coupon?</h2>
+        <div
+          class="lg:w-3/12 mt-10 lg:py-10 px-1 flex lg:flex-col md:flex-row md:gap-5"
+        >
+          <div class="p-2 md:px-6 lg:px-2 bg-white">
+            <h2 class="text-2xl lg:text-3xl font-medium mb-2 md:mb-6">Have coupon?</h2>
             <div class="flex flex-row items-center">
               <input
                 type="text"
                 name=""
                 placeholder="Coupon code"
                 class="text-[20px] outline-none border py-2 px-2 rounded-l-md w-full"
-                id=""
+                id="coupon-input"
               />
               <button
                 disabled="disabled"
-                id=""
+                id="coupon-button"
                 class="text-[20px] font-semibold py-2 px-4 bg-[#E527B2] rounded-r-md text-white"
               >
                 Apply
               </button>
             </div>
           </div>
-          <div class=""></div>
           <hr />
-          <div class="p-2">
-            <button
-              class="text-[20px] font-semibold py-2 px-3 bg-[#E527B2] w-full text-white rounded-lg mt-4"
-            >
-              Make Purchase
-            </button>
+          <div class="mt-3">
+            <div id="purchase-history" class="p-2">
+              <h4 class="text-base font-bold text-dark2">
+                Total Price: <span id="total-price"></span>
+              </h4>
+              <h4 class="text-base font-bold text-dark2">
+                Discount: <span id="discount"></span>
+              </h4>
+              <h4 class="text-base font-bold text-dark2">
+                Total: <span id="total"></span>
+              </h4>
+            </div>
+            <div class="p-2">
+              <button
+                id="purchase-button"
+                class="text-[20px] font-semibold py-2 px-3 bg-[#E527B2] w-full text-white rounded-lg"
+              >
+                Make Purchase
+              </button>
+            </div>
           </div>
         </div>
       </main>

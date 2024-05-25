@@ -1,3 +1,15 @@
+const makePurchase = document.getElementById("purchase-button");
+const congratulationCard = document.getElementById("congratulation-card");
+const congratulationShadow = document.getElementById("congratulation-shadow");
+
+makePurchase.addEventListener("click", function () {
+  congratulationCard.style.display = "block";
+});
+
+congratulationShadow.addEventListener("click", function () {
+  congratulationCard.style.removeProperty("display");
+});
+
 // input
 function getInputValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
@@ -27,7 +39,6 @@ function setValue(elementId, value) {
   element.innerText = value;
 }
 
-
 //purchase history
 /*
 const purchaseHistory = document.getElementById("purchase-history");
@@ -51,25 +62,25 @@ function card1() {
   const card1Price = getPriceValueById("card-1-price");
   const totalPrice = getPriceValueById("total-price");
   const newTotalPrice = totalPrice + card1Price;
-    if (newTotalPrice > 200) {
-        const discountPrice = totalPrice * 20 / 100;
-    } else {
-        discountPrice = "00";
-    }
-    const netPrice = newTotalPrice - discountPrice;
-    setValue("total-price", newTotalPrice); 
-    setValue("discount", discountPrice);
-    setValue("total", netPrice);
+  if (newTotalPrice > 200) {
+    const discountPrice = (totalPrice * 20) / 100;
+  } else {
+    discountPrice = "00";
+  }
+  const netPrice = newTotalPrice - discountPrice;
+  setValue("total-price", newTotalPrice);
+  setValue("discount", discountPrice);
+  setValue("total", netPrice);
   //purchase history
- const purchaseHistory = document.getElementById("purchase-history");
-const div = document.createElement("div");
-div.innerHTML = `
+  const purchaseHistory = document.getElementById("purchase-history");
+  const div = document.createElement("div");
+  div.innerHTML = `
                 <div class="py-3 flex flex-row  items-center justify-between">
                     <p class="text-[20px] font-bold text-dark2">${
                       purchaseHistory.childElementCount + 1
                     }. K. Accessories </p>
                 </div> `;
-    purchaseHistory.appendChild(div);
+  purchaseHistory.appendChild(div);
 }
 //card 2
 function cardTwo() {
@@ -249,7 +260,7 @@ function cardEight() {
                 </div> `;
   purchaseHistory.appendChild(div);
 }
-//card seven
+//card nine
 function cardNine() {
   const card9Price = getPriceValueById("card-9-price");
   const totalPrice = getPriceValueById("total-price");

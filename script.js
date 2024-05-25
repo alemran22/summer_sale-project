@@ -1,3 +1,16 @@
+//coupon code
+const couponBtn = document.getElementById("coupon-button");
+const couponInput = document.getElementById("coupon-input");
+couponInput.addEventListener("keyup", function () {
+  const value = couponInput.value;
+  if (value == "SELL200") {
+    couponBtn.removeAttribute("disabled");
+  } else {
+    couponBtn.setAttribute("disabled", "disabled");
+  }
+});
+
+//congratulations card
 const makePurchase = document.getElementById("purchase-button");
 const congratulationCard = document.getElementById("congratulation-card");
 const congratulationShadow = document.getElementById("congratulation-shadow");
@@ -5,7 +18,6 @@ const congratulationShadow = document.getElementById("congratulation-shadow");
 makePurchase.addEventListener("click", function () {
   congratulationCard.style.display = "block";
 });
-
 congratulationShadow.addEventListener("click", function () {
   congratulationCard.style.removeProperty("display");
 });
@@ -38,7 +50,6 @@ function setValue(elementId, value) {
   const element = document.getElementById(elementId);
   element.innerText = value;
 }
-
 //purchase history
 /*
 const purchaseHistory = document.getElementById("purchase-history");
